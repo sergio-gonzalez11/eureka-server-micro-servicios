@@ -1,0 +1,14 @@
+ 
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: "Configuracion-Service"
+  
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sergio-gonzalez11/config-server-repository
+    

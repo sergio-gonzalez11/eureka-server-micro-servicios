@@ -1,0 +1,5 @@
+spring\micro\servicios\bicicletas\service\BicicletaService.class
+spring\micro\servicios\bicicletas\repository\BicicletaRepository.class
+spring\micro\servicios\bicicletas\entity\Bicicleta.class
+spring\micro\servicios\bicicletas\BicicletasApplication.class
+spring\micro\servicios\bicicletas\controller\BicicletaController.class

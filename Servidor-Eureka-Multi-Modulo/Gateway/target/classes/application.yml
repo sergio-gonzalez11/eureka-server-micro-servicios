@@ -1,0 +1,30 @@
+
+server:
+  port: 8090
+
+spring:
+  application:
+    name: "Gateway-Service"
+
+eureka:
+  instance:
+    hostname: localhost
+    ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+           
+zuul:
+  routes:
+    bicicletas:
+      path: /api/bicicletas/**
+      service-id: Api-Bicicletas
+      url: http://localhost:9090
+    coches:
+      path: /api/coches/**
+      service-id: Api-Coches
+      url: http://localhost:9091
+    usuarios:
+      path: /api/usuarios/**
+      service-id: Api-Usuarios
+      url: http://localhost:9092
